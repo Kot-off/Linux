@@ -1,0 +1,23 @@
+#SH Client configuration example | ssh config example
+Host _.com
+StrictHostKeyChecking no
+User etoosamoe
+ForwardAgent yes
+IdentityFile /Users/username/.ssh/id_rsa
+IdentitiesOnly yes
+UserKnownHostsFile=/dev/null
+UseKeychain yes
+AddKeysToAgent yes
+ServerAliveInterval 60
+ServerAliveCountMax 1200
+Host std-_
+StrictHostKeyChecking no
+User ci-user
+ForwardAgent yes
+IdentityFile /Users/username/.ssh/id_rsa_second
+IdentitiesOnly yes
+UserKnownHostsFile=/dev/null
+UseKeychain yes
+AddKeysToAgent yes
+ServerAliveInterval 60
+ServerAliveCountMax 1200
